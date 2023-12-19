@@ -1,0 +1,32 @@
+{
+  "name": "@packages/components",
+  "private": false,
+  "version": "0.0.1",
+  "exports": {
+    ".": {
+      "import": "./dist/es/index.js",
+      "require": "./dist/lib/index.js"
+    },
+    "./style": {
+      "import": "./dist/es/style.css",
+      "require": "./dist/lib/style.css"
+    }
+  },
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "element-plus": "^2.3.0",
+    "sass": "^1.69.5",
+    "vue": "^3.3.8"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.5.0",
+    "vite": "^5.0.0"
+  }
+}
